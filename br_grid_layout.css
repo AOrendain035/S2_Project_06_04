@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Layout Styles
+   Author: Alexander Orendain
+   Date: 11.14.18
+	
+   Filename: br_grid_layout.css
+
+*/
+
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-1-1 {
+    width: 100%
+}
+
+div.col-1-2 {
+    width: 33.33%;
+}
+
+div.col-2-3 {
+    width: 66.67%;
+}
+
+div.col-1-4 {
+    width: 25%;
+}
